@@ -1,0 +1,50 @@
+<%- include('partials/head') %>
+ 
+ <div class="blog-card">
+ <h1><%= data.Topic %> </h1>
+ <div class="blog-view-title">
+    <h2> <%= data.Subject %> </h2>
+ </div>
+ <div class="blog-info">
+     <p><%= data.Blog %></p> 
+
+ </div>
+ <div class="blog-footer">
+     <p>This Blog was Written by <%= data.name %> on <%= data.DateOfUpload %>  </p>
+     <a class = "share" href="#" onclick="Copy();">Share post</a>
+    
+    </div>
+    <%let arrStu = data.StudentLiked%>
+    <% let bTest = false %> 
+    <%arrStu.forEach((list)=>{%>
+    <%if(list === iniData.StudentNo){%>
+      <%bTest = true %>
+      <% } %> 
+    <%})%>
+    
+   <%if(iniData.Student && !bTest){%>
+     <form method="post" action="/Like/<%=data.id %>/<%=iniData.StudentNo%> ">
+      <br />
+        <p>Do you Like this Post?</p>
+          <input type="radio" id="Yes" name="Like" value="Yes">
+          <label for="Yes">Yes</label>
+          <input type="radio" id="No" name="Like" value="NO">
+          <label for="No">No</label>
+          <button type="submit" >Send Feedback</button>
+     </form>
+
+      <%}%> 
+      
+  
+ </div>
+ <br />
+ 
+
+       
+ 
+   
+    
+
+   
+
+<%- include('partials/footer') %>

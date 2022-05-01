@@ -1,0 +1,31 @@
+<%- include('partials/head') %>
+<form method="POST" action="/Edit"> 
+    <div class="form-group">
+      <label for="fullName">Enter your fullname:*</label>
+      <input name="name" type="text" value = "<%=data.name%>"class="form-control" id="fullName" placeholder="e.g Chiloane Tebogo">
+    </div>
+    <div class="form-group">
+      <label for="Topic">Topic:*</label>
+      <input value = "<%=data.Topic%>" name ="Topic" type="text" class="form-control" id="Topic" placeholder="Enter your topic">
+    </div>
+    
+    <div class="form-group">
+      <label for="Subject">Enter the subject of your Blog:*</label>
+      <input name="Sub" value = "<%=data.Subject%>" type="text" class="form-control" id="Subject" >
+    </div>
+    <div class="form-group">
+      <label for="Key">Enter a unique key for your Blog:*</label>
+      <input name="Key" type="text" value="<%=data.Key%>" class="form-control" id="Key" >
+    </div>
+    <div class="mb-3">
+      <label for="BlogArea" class="form-label">Enter Your blog here:*</label>
+      <textarea name = "Blog" class="form-control" id="BlogArea" rows="4"><%=data.Blog%></textarea>
+    </div>
+    <button type="submit" value = "update" name="edit" class="btn btn-primary">Edit</button>
+    <button type="submit" value = "delete"  name = "edit" class="btn btn-primary">Delete</button>
+    <p class ="red">Warning if you Delete there is no going back!!!!!!</p>
+  </form>
+  </div>
+
+
+<%- include('partials/footer') %>

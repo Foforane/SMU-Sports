@@ -1,0 +1,15 @@
+<%- include('partials/head') %>
+<div class="preBlogger">
+    <div>Do you want to create a new Blog or Edit an existing one?</div>
+<form method="post" action = "/Key">
+ 
+    <label for="key">Enter a key</label>
+    <input id="key" name = "Key" type = "text">
+    <button type="submit" class="btn btn-primary">Edit</button>
+    <a class = "btn btn-primary" href="/Bloggers">Create a new Blog</a>
+</form>
+
+</div>
+
+
+<%- include('partials/footer')%>

@@ -1,0 +1,278 @@
+.Nav-color{
+    color: white;
+}
+html{
+    scroll-behavior: smooth;
+}
+.red{
+    color: red;
+}
+.share{
+    padding: 0.75em 2.5em;
+    background-color: teal;
+    text-decoration: none;
+    margin: .5em ;
+    text-align: center;
+    color: white;
+    border-radius: .35em;
+}
+.share:hover{
+    background-color: darkslategray;
+}
+.Coach{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.blog-intro ul{
+    list-style: none;
+   text-align: center;
+
+}
+.CoachPic{
+    width:250px;
+ 
+}
+.Error{
+    text-align:center;
+}
+.preBlogger{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.xe p{
+    
+    color: white;
+ text-align: center;
+}
+.LikeBtn{
+display: flex;
+justify-content: center;
+cursor: pointer;
+}
+
+.jumbotro{
+    
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(rgb(170, 113, 8),rgb(8, 8, 94));  
+
+height: 200px;
+display: flex;
+}
+.jumbotro .xe h2{
+    font-family:cursive;
+}
+.my-container{
+   margin-top: 30px;
+    /*background:darkslategrey;*/
+}
+.cl{
+    background: black;
+    opacity: .5;
+    
+}
+.icon {
+margin-left:2%;
+float:left;
+}
+.Text{
+margin:0px;
+}
+.my-col{
+   cursor: pointer;
+    border-left: solid;
+border-left-color: brown;
+
+margin: 5px;
+transition: 1s;
+}
+.my-col:hover{
+    transform:translateX(7%);
+}
+.xe{
+margin: auto;
+
+  
+}
+
+.blogform input{
+    width: 30%;
+}
+.name{
+    text-align: center;
+}
+.blogg{
+    display: flex;
+    
+ width: 60%;
+    margin: auto;
+
+}
+.blog-card h1{
+
+    text-align: center;
+    padding :1.4em 0;
+    color: indianred;
+}
+.blog-card h2{
+    text-align: center;
+    color: purple;
+}
+.blog-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.my-col h4{
+    
+    color: RED;
+}
+.Hello{
+    color:black;
+}
+.s ul li{
+    list-style: none;
+}
+
+.intro{
+    width: 90%;
+    height: 300px;
+    margin: auto;
+    display: flex;
+}
+.Text{
+    width: 200px;
+}
+.pic{
+
+   width: 20px;
+ height: 20px;
+    
+}
+.im{
+    width: 200px;
+    height: 200px;
+       
+}
+.footer{
+    height: 60px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+.fText{
+    font-family:serif;
+    color: white;
+   
+}
+.More{
+     margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    background-color: lightgrey;
+}
+.t{
+    border-left:solid 2px ;
+    flex:1 ; 
+}
+.s{
+    border-left:solid 2px ;
+flex:1;
+}
+.f{
+    flex:1;
+}
+
+.More p{
+    font-family: sans-serif;
+   
+}
+.More h3{
+    text-align: center;
+    color: red;
+    font-family: 'Times New Roman', Times, serif;
+}
+.xe h2{
+    font-weight: bold;
+    color: red;
+    transition: 1.3s;
+}
+.xe h2:hover{
+ transform:scale(1.05);
+ color: orange;
+ cursor: pointer;
+}
+.blog-info{
+    margin: 0 auto;
+   
+    padding: 1.5em 0;
+  }
+  .blog-header{
+      text-align:center;
+      color: rgba(26, 183, 231, 1);
+      padding :1.5em 0;
+  }
+  .mini-blog{
+  display: flex ;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+ 
+  }
+  .mini-blog h2{
+      color:red;
+      text-align:center ;
+  }
+  .blog-intro{
+      width: 300px;
+    border-left: solid 1px red;
+    border-right: solid 1px lightgrey;
+    text-align: center;
+    margin: 1.5em 1.3em;
+  }
+  .blog-intro h4{
+    color:rgb(23, 231, 214)
+}
+@media (max-width:683px){
+    .mini-blog{
+        
+        flex-direction: row;
+    }
+    .blog-intro{
+        width: 100%;
+      border-left:none;
+      border-bottom: solid 1px;
+      text-align: center;
+      margin: 0.1em 1.3em;
+      padding: 1.35em 0;
+    }
+    
+    .blog-intro:last-child{
+        border-bottom: none;
+        }
+    .More{
+        flex-direction: column;
+    }
+    .t{
+        border-top:solid 2px ;
+        flex:1 ; 
+    }
+    .s{
+        border-top:solid 2px ;
+    flex:1;
+    }
+    .xe h2:hover{
+       
+       transform: none;
+    }
+    .copy{
+margin:auto
+    }
+    .sul li{
+        text-align: center;
+       
+    }
+}

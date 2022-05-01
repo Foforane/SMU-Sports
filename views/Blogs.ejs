@@ -1,0 +1,26 @@
+<%- include('partials/head') %>
+<h2 class="blog-header">Read Blogs that talks about different sports</h2>
+<hr/>
+<div class="mini-blog">  
+  
+    <% data.forEach((list)=> {%> 
+<div class="blog-intro">
+    <h2><%=list.Topic%> </h2>
+    <h4><%=list.Subject%> </h4>
+    
+    <p>by <%= list.name%> </p>
+    <%if(list.Likes > 0 && list.Likes !=1) {%>
+    <p>This blog was liked by <%=list.Likes%> People</p>
+<%}else if ( list.Likes === 0){%>
+    <p>This blog was liked by no one</p>
+<%}else if(list.Likes === 1){%>
+    <p>This blog was liked by 1 person</p>
+<%} else{%>
+    <p>This blog was liked by <%=list.Likes%> people</p>
+   <%} %>
+    <a href="/blogs/<%= list.id %> " class = "btn btn-primary btn-md">Read</a>
+    
+</div>
+<%})%>
+</div>
+<%- include('partials/footer')%>

@@ -1,0 +1,75 @@
+<%- include('partials/head') %> 
+    <div class="jumbotro">
+   
+          
+    <div class="xe">
+      <h2 onclick="location.href='https://www.smu.ac.za/';">Sefako Makgatho Health Sciences University</h2>
+     
+      <p><bold>Welcome</bold> <%=iniData.Surname%> <%=iniData.Name%></p>
+    </div>
+
+
+</div>
+
+    <div class = "container my-container">
+        <div class ="row my-row">
+            <div  onclick="location.href='/blogs';" class="col-md-6 col-sm-5 my-col">
+        <h4>Blogs</h4>
+        <p>Read about the current sporting events happening in SMU. All updates, Results and all the drama.</p>
+        <a href = "/Blogs"class = "btn btn-primary btn-md">Read more</a>
+    </div>
+        <div onclick="location.href='#Sport';" class="col-md-4 col-sm-5 my-col">
+            <h4>Sports</h4>
+           <p>We have lots  of sports available here at SMU. sports such as Soccer, VolleyBall, Chess, Cricket and more.</p>
+        </div>   
+    
+    
+</div>
+<div class="row">
+  <div onclick="location.href='/Coaches';" class="col-md=8 col-sm-6 my-col">
+  <h4>Coaches</h4>
+  <p>We have a lots of coaches which are enthuiastic to make you a better player, our sports complex has gym which you can use to keep fit</p>
+  </div>
+  <div onclick="location.href='https://smu.devman.co.za/devman/online/giving/';" class="col-md-2 col-sm-4 my-col">
+ <h4>Donate</h4>
+ <p>You can Donate here</p>
+ <a href = "https://smu.devman.co.za/devman/online/giving/"class = "btn btn-primary btn-md">Donate</a>
+  </div>
+</div>
+   
+</div>
+<div class="More">
+  <div class = "f">
+    <h3>Motive</h3>
+    <p>Our Motive is to produce world class Athletes, We take talent and convert it into Art</p>
+  </div>
+  <div id= "Sport" class = "s">
+    <h3>Sports available</h3>
+    <ul class="sul">
+      <li>Soccer</li>
+      <li>Cricket</li>
+      <li>Rugby</li>
+        <li>Chess</li>
+        <li>Tennis</li>
+        <li>Super Pool</li>
+    <li>Body Building</li>
+    <li>Dance Sport</li>
+    <li>VolleyBall</li>
+    <li>Body Building</li>
+    <li>Athletics</li>
+    <li>Aerobics</li>
+    <li>Table Tennis</li>
+    <li>Karate</li>
+    <li>Boxing</li>
+    <li>Swimming</li>
+    <li>Basketball</li>
+    <li>Netball</li>
+    <li>Squash</li>
+      </ul>  
+  </div>
+  <div class = "t"> 
+  <h3>Events</h3>
+  <p>We All take our amazing Students to participate in tournaments for free, to futher their skills </p>
+</div>
+</div>
+<%- include('partials/footer')%>
